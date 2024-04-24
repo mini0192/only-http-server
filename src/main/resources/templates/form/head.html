@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+</head>
+<head>
+    <div th:fragment="head">
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/board/pages}">게시판</a>
+        <a th:href="@{/account/signin}">로그인</a>
+        <hr>
+    </div>
+</head>
+</html>

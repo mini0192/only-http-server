@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="~{/form/head :: head}"></div>
+
+<div th:each="board:${boards}">
+    <hr>
+    <p th:text="${board.id}"></p>
+    <a th:href="@{|/board/pages/${board.id}|}"><h2 th:text="${board.title}"></h2></a>
+    <p th:text="${board.writer}"></p>
+<!--<p th:text="${board.createat}"></p>-->
+</div>
+<hr>
+<a th:href="@{/board/write}">글작성</a>
+</html>

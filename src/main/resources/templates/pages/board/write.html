@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="~{/form/head :: head}"></div>
+
+<form th:action="@{/board/write}" th:object="${boardForm}" method="post">
+    <input type="text" name="writer" th:value="${username}" size="30" readonly><br>
+
+    <input type="text" th:field="*{title}" size="30" placeholder="제목"><br>
+
+    <textarea rows="20" th:field="*{description}" cols="32" placeholder="내용"></textarea><br>
+
+    <input type="submit" value="제출">
+</form>
+
+</html>

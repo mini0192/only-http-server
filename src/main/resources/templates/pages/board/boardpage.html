@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="~{/form/head :: head}"></div>
+
+<h2 th:text="${board.title}"></h2>
+<p th:text="${board.writer}"></p>
+<hr>
+<p th:text="${board.description}"></p>
+
+<form th:action="@{/board/pages/delete}" method="post">
+    <input type="text" th:value="${board.id}" name="id" readonly>
+    <input type="submit" value="삭제">
+</form>
+
+<a th:href="@{|/board/pages/put/${board.id}|}">수정</a>
+</html>

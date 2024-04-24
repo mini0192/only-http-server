@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="~{/form/head :: head}"></div>
+
+<form action="/account/signin" method="post">
+    <input type="text" name="username" placeholder="아이디" size="20"><br>
+    <input type="password" name="password" placeholder="비밀번호" size="20"><br>
+    <input type="submit" value="로그인"> <a href="/account/signup">회원가입</a>
+</form>
+
+</html>
