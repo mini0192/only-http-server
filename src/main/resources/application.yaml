@@ -2,8 +2,6 @@ server:
   port: 8080
 
 spring:
-  application:
-    name: YulGallery
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${DB_HOST_URL}:${DB_PORT}/website
