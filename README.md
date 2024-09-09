@@ -20,4 +20,4 @@ Youtube를 보다가 NoCss라는 영상을 보고 만든 사이트
 ## 개발 환경
 
 - `Spring boot`
-- `IntelliJ`
+- `InteliJ`
